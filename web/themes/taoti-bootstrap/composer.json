@@ -1,0 +1,18 @@
+{
+    "name": "taoti/taoti-bootstrap",
+    "description": "A Barebones Bootstrap theme for Drupal 8",
+    "license": "MIT",
+    "type": "drupal-theme",
+    "authors": [{
+            "name": "Rich Allen",
+            "email": "rallen@taoti.com",
+            "role": "Developers"
+        }],
+    "minimum-stability": "dev",
+    "require": {
+        "twbs/bootstrap": "~3.3@dev"
+    },
+    "scripts": {
+        "post-install-cmd": "rsync -r vendor/twbs/bootstrap/ bootstrap --exclude=.git/"
+    }
+}
