@@ -1,0 +1,18 @@
+uuid: 6106845a-d223-4f78-bb00-d2111c61d1e8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - taoti_bootstrap
+id: taoti_bootstrap_page_title
+theme: taoti_bootstrap
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

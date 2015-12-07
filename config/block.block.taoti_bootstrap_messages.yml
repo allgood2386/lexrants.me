@@ -1,0 +1,20 @@
+uuid: 1d54d9ae-88e8-446f-8501-0114571dbf64
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - taoti_bootstrap
+id: taoti_bootstrap_messages
+theme: taoti_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

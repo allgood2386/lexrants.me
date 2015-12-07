@@ -1,0 +1,10 @@
+uuid: 7d609887-f29d-4adc-8004-4da7b6afe88e
+langcode: en
+status: true
+dependencies: {  }
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'

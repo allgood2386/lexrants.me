@@ -1,0 +1,24 @@
+uuid: 1a0f63b0-1dd0-4a55-8f00-bd03ce905c2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - taoti_bootstrap
+id: taoti_bootstrap_tools
+theme: taoti_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

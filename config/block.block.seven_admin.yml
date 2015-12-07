@@ -1,0 +1,24 @@
+uuid: 6389a524-0fe0-4e85-af2a-42c01d769c7c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - seven
+id: seven_admin
+theme: seven
+region: '-1'
+weight: 1
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
