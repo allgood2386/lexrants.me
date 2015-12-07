@@ -1,7 +1,7 @@
 <?php
 
 /**
- * A drupal aliase file example.
+ * A drupal alias file example.
  *
  * @file
  *
