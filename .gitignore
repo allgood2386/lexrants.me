@@ -13,7 +13,7 @@ web/sites/default/files
 .idea
 
 # Ignore configuration files that may contain sensitive information.
-web/sites/*/settings*.php
+web/sites/*/settings.*.php
 web/sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
