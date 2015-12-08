@@ -2,9 +2,9 @@
 drush/contrib
 vendor
 web/core
-web/modules/contrib
-web/themes/contrib
-web/profiles/contrib
+web/modules/
+web/themes/
+web/profiles/
 
 # Ignore Drupal's file directory
 web/sites/default/files
@@ -15,6 +15,7 @@ web/sites/default/files
 # Ignore configuration files that may contain sensitive information.
 web/sites/*/settings.*.php
 web/sites/*/services*.yml
+web/sites/*/*.services.yml
 
 # Ignore paths that contain user-generated content.
 web/sites/*/files

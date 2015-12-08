@@ -1,6 +1,6 @@
 uuid: 4089d9ca-f8c3-4a68-b103-3edd6ca1cfc8
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - user
@@ -8,7 +8,7 @@ dependencies:
     - taoti_bootstrap
 id: taoti_bootstrap_login
 theme: taoti_bootstrap
-region: header
+region: '-1'
 weight: 0
 provider: null
 plugin: user_login_block

@@ -7,7 +7,7 @@ dependencies:
 id: taoti_bootstrap_local_actions
 theme: taoti_bootstrap
 region: content
-weight: -10
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:

@@ -7,7 +7,7 @@ dependencies:
 id: taoti_bootstrap_local_tasks
 theme: taoti_bootstrap
 region: content
-weight: -20
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

@@ -7,7 +7,7 @@ dependencies:
 id: taoti_bootstrap_page_title
 theme: taoti_bootstrap
 region: content
-weight: -30
+weight: -4
 provider: null
 plugin: page_title_block
 settings:
