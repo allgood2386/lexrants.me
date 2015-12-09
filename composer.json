@@ -1,4 +1,4 @@
--{
+{
     "name": "taoti/drupal-project",
     "description": "Builds a Drupal Project with development tools and our theme.",
     "type": "project",
