@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cc5066db17cfa91b6750b5fc5eada6ab",
-    "content-hash": "5d8594218e9fa6cf7c2345247af6e7fe",
+    "hash": "1182f6ec535bb3d9019de02dc5abc80c",
+    "content-hash": "991d9930f617da6db77c1e6a0c8936f8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -708,7 +708,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/3722f7311ea30250440e9bda298399bdc9e61eb7",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/5a3ccd0494980af7e68ae709190b7e9107e74dad",
                 "reference": "3722f7311ea30250440e9bda298399bdc9e61eb7",
                 "shasum": ""
             },
@@ -3501,6 +3501,28 @@
             "time": "2015-11-18 13:41:01"
         },
         {
+            "name": "taoti/highlightjs",
+            "version": "8.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.taoti.com/components/highlightjs.git",
+                "reference": "7c828d9a054148519437f80db283eb5936dfaf25"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Rich Allen",
+                    "email": "rallen@taoti.com"
+                }
+            ],
+            "description": "A drupal module to allow syntax highlighting of content.",
+            "time": "2015-12-09 14:32:59"
+        },
+        {
             "name": "taoti/taoti-bootstrap",
             "version": "3.0.0",
             "source": {
@@ -3919,7 +3941,8 @@
     "stability-flags": {
         "drupal/console": 20,
         "drupal/devel": 20,
-        "drupal/composer_manager": 20
+        "drupal/composer_manager": 20,
+        "taoti/highlightjs": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
