@@ -22,7 +22,7 @@ $aliases['local'] = array(
 );
 
 $aliases['live'] = array(
-  'env' => 'dev',
+  'env' => 'live',
   'root' => '/var/www/lexrants.me/web',
   'uri' => 'https://lexrants.me',
   'remote-user' => 'root',
