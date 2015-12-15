@@ -1,11 +1,11 @@
-uuid: 16fbe3ca-18fe-4e8b-a900-fb809a8994de
+uuid: 9856f2d3-2438-44de-9703-3b37412e665e
 langcode: en
 status: true
 dependencies:
   theme:
-    - taoti_bootstrap
-id: taoti_bootstrap_local_tasks
-theme: taoti_bootstrap
+    - lexrants
+id: lexrants_local_tasks
+theme: lexrants
 region: content
 weight: -4
 provider: null

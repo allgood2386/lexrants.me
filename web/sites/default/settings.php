@@ -686,3 +686,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 $settings['install_profile'] = 'minimal';
 $config_directories['sync'] = 'sites/default/files/config_vyVyFW4EAWGkX74OCkjKn3ohUNYdOumutFKHMn_YTRNz0jIJmqqITAlbK1f-1balJ4lNqhB0HA/sync';
 $config_directories['git'] = '../config/';
+
+$settings['redis.connection']['interface'] = 'PhpRedis';
+$settings['redis.connection']['host'] = '127.0.0.1';
+$settings['cache']['default'] = 'cache.backend.redis';

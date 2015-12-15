@@ -20,6 +20,7 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  redis: 0
   responsive_image: 0
   search: 0
   syslog: 0
@@ -32,8 +33,7 @@ module:
   views_ui: 0
   minimal: 1000
 theme:
-  stark: 0
   stable: 0
-  taoti_bootstrap: 0
   classy: 0
   seven: 0
+  lexrants: 0

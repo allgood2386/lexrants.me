@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1182f6ec535bb3d9019de02dc5abc80c",
-    "content-hash": "991d9930f617da6db77c1e6a0c8936f8",
+    "hash": "7a5c28374491eaa096b54f06bb2818a0",
+    "content-hash": "2285d22bcae267ed8cf903d2725cdfea",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -68,6 +68,38 @@
                 "zip"
             ],
             "time": "2014-12-10 15:03:17"
+        },
+        {
+            "name": "allgood2386/lexrants",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/allgood2386/lexrants-theme.git",
+                "reference": "2a742fd040ea97616ec1a5a0d8ca24c4dc5bf7b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/allgood2386/lexrants-theme/zipball/2a742fd040ea97616ec1a5a0d8ca24c4dc5bf7b6",
+                "reference": "2a742fd040ea97616ec1a5a0d8ca24c4dc5bf7b6",
+                "shasum": ""
+            },
+            "require": {
+                "twbs/bootstrap": "~3.3@dev"
+            },
+            "type": "drupal-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rich Allen",
+                    "email": "rallen@taoti.com",
+                    "role": "Developers"
+                }
+            ],
+            "description": "A Bootstrap theme for Drupal 8",
+            "time": "2015-12-10 16:44:18"
         },
         {
             "name": "composer/installers",
@@ -468,16 +500,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "0009b8f0d4a917aabc971fb089eba80e872f83f9"
+                "reference": "311001fd9865a4d0d59efff4eac6d7dcb3f5270c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/0009b8f0d4a917aabc971fb089eba80e872f83f9",
-                "reference": "0009b8f0d4a917aabc971fb089eba80e872f83f9",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/311001fd9865a4d0d59efff4eac6d7dcb3f5270c",
+                "reference": "311001fd9865a4d0d59efff4eac6d7dcb3f5270c",
                 "shasum": ""
             },
             "require": {
@@ -494,7 +526,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6.x-dev"
+                    "dev-master": "2.5.x-dev"
                 }
             },
             "autoload": {
@@ -537,7 +569,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2015-08-31 13:00:22"
+            "time": "2015-12-04 12:49:42"
         },
         {
             "name": "doctrine/inflector",
@@ -708,7 +740,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/5a3ccd0494980af7e68ae709190b7e9107e74dad",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/e1bdd1e4e162e3eb57287c5c096158a2aa776aa1",
                 "reference": "3722f7311ea30250440e9bda298399bdc9e61eb7",
                 "shasum": ""
             },
@@ -1622,32 +1654,38 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v1.4.1",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51"
+                "reference": "c542e5d86a9775abd1021618eb2430278bfc1e01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51",
-                "reference": "f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c542e5d86a9775abd1021618eb2430278bfc1e01",
+                "reference": "c542e5d86a9775abd1021618eb2430278bfc1e01",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=5.3"
+                "php": ">=5.4"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
-                "files": [
-                    "lib/bootstrap.php"
-                ]
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1663,7 +1701,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2015-09-19 14:15:08"
+            "time": "2015-12-04 15:28:43"
         },
         {
             "name": "padraic/humbug_get_contents",
@@ -3521,38 +3559,6 @@
             ],
             "description": "A drupal module to allow syntax highlighting of content.",
             "time": "2015-12-09 14:32:59"
-        },
-        {
-            "name": "taoti/taoti-bootstrap",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Taoti/taoti-bootstrap.git",
-                "reference": "333e7ae13e4e1929aa7fc08e2590f63257ae6150"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Taoti/taoti-bootstrap/zipball/333e7ae13e4e1929aa7fc08e2590f63257ae6150",
-                "reference": "333e7ae13e4e1929aa7fc08e2590f63257ae6150",
-                "shasum": ""
-            },
-            "require": {
-                "twbs/bootstrap": "~3.3@dev"
-            },
-            "type": "drupal-theme",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rich Allen",
-                    "email": "rallen@taoti.com",
-                    "role": "Developers"
-                }
-            ],
-            "description": "A Barebones Bootstrap theme for Drupal 8",
-            "time": "2015-11-12 14:40:45"
         },
         {
             "name": "twbs/bootstrap",

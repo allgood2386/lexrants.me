@@ -1,4 +1,4 @@
-uuid: 15e0b7dc-641b-4739-9a00-ef096f0661b2
+uuid: 518b3480-e4d6-49b5-b000-b9119b8c97f2
 langcode: en
 status: false
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - taoti_bootstrap
-id: taoti_bootstrap_admin
-theme: taoti_bootstrap
+    - lexrants
+id: lexrants_admin
+theme: lexrants
 region: '-1'
 weight: 1
 provider: null

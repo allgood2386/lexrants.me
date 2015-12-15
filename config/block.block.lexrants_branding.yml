@@ -1,13 +1,13 @@
-uuid: 2659111e-add9-461e-a933-51447c7c495c
+uuid: df841765-b6d5-423b-892b-43da0a5bde66
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - stark
-id: stark_branding
-theme: stark
+    - lexrants
+id: lexrants_branding
+theme: lexrants
 region: header
 weight: 0
 provider: null
