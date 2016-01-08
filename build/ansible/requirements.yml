@@ -24,3 +24,4 @@
 - src: geerlingguy.security
 - src: geerlingguy.solr
 - src: geerlingguy.varnish
+- src: kamaln7.swapfile
