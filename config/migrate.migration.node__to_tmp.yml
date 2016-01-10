@@ -1,0 +1,35 @@
+uuid: bf2f0612-69ed-4707-8701-1b81df4c8b45
+langcode: en
+status: true
+dependencies:
+  module:
+    - multiversion
+id: node__to_tmp
+migration_tags: null
+label: ''
+source:
+  plugin: multiversion
+process:
+  nid: nid
+  uuid: uuid
+  vid: vid
+  type: type
+  langcode: langcode
+  title: title
+  uid: uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_timestamp: revision_timestamp
+  revision_uid: revision_uid
+  revision_log: revision_log
+  revision_translation_affected: revision_translation_affected
+  default_langcode: default_langcode
+  path: path
+  body: body
+destination:
+  plugin: tempstore
+template: null
+migration_dependencies: {  }

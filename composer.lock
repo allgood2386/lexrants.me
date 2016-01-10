@@ -1033,51 +1033,6 @@
             "time": "2016-01-06 22:36:23"
         },
         {
-            "name": "drupal/ctools",
-            "version": "7.1.9",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/ctools",
-                "reference": "1bf2f388cd7371ae16639349ae3b344732faafae"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/ctools-7.x-1.9.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/bulk_export": "self.version",
-                "drupal/ctools_access_ruleset": "self.version",
-                "drupal/ctools_ajax_sample": "self.version",
-                "drupal/ctools_custom_content": "self.version",
-                "drupal/ctools_plugin_example": "self.version",
-                "drupal/page_manager": "self.version",
-                "drupal/stylizer": "self.version",
-                "drupal/term_depth": "self.version",
-                "drupal/views_content": "self.version"
-            },
-            "suggest": {
-                "drupal/advanced_help": "Required by drupal/ctools_plugin_example",
-                "drupal/color": "Required by drupal/stylizer",
-                "drupal/page_manager": "Required by drupal/ctools_plugin_example",
-                "drupal/panels": "Required by drupal/ctools_plugin_example",
-                "drupal/views": "Required by drupal/views_content"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "A library of helpful tools by Merlin of Chaos.",
-            "homepage": "https://www.drupal.org/project/ctools"
-        },
-        {
             "name": "drupal/deploy",
             "version": "8.1.0-alpha4",
             "source": {
@@ -1160,164 +1115,6 @@
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
             "time": "2016-01-06 13:38:58"
-        },
-        {
-            "name": "drupal/drupal",
-            "version": "7.41.0",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/drupal",
-                "reference": "69af622114261c1c13cf3c9b5ccc418cd036594b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/drupal-7.41.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "replace": {
-                "drupal/aggregator": "self.version",
-                "drupal/bartik": "self.version",
-                "drupal/block": "self.version",
-                "drupal/blog": "self.version",
-                "drupal/book": "self.version",
-                "drupal/color": "self.version",
-                "drupal/comment": "self.version",
-                "drupal/contact": "self.version",
-                "drupal/contextual": "self.version",
-                "drupal/dashboard": "self.version",
-                "drupal/dblog": "self.version",
-                "drupal/field": "self.version",
-                "drupal/field_sql_storage": "self.version",
-                "drupal/field_ui": "self.version",
-                "drupal/file": "self.version",
-                "drupal/filter": "self.version",
-                "drupal/forum": "self.version",
-                "drupal/garland": "self.version",
-                "drupal/help": "self.version",
-                "drupal/image": "self.version",
-                "drupal/list": "self.version",
-                "drupal/locale": "self.version",
-                "drupal/menu": "self.version",
-                "drupal/minimal": "self.version",
-                "drupal/node": "self.version",
-                "drupal/number": "self.version",
-                "drupal/openid": "self.version",
-                "drupal/options": "self.version",
-                "drupal/overlay": "self.version",
-                "drupal/path": "self.version",
-                "drupal/php": "self.version",
-                "drupal/poll": "self.version",
-                "drupal/profile": "self.version",
-                "drupal/rdf": "self.version",
-                "drupal/search": "self.version",
-                "drupal/seven": "self.version",
-                "drupal/shortcut": "self.version",
-                "drupal/standard": "self.version",
-                "drupal/stark": "self.version",
-                "drupal/statistics": "self.version",
-                "drupal/syslog": "self.version",
-                "drupal/system": "self.version",
-                "drupal/taxonomy": "self.version",
-                "drupal/text": "self.version",
-                "drupal/toolbar": "self.version",
-                "drupal/tracker": "self.version",
-                "drupal/translation": "self.version",
-                "drupal/trigger": "self.version",
-                "drupal/update": "self.version",
-                "drupal/user": "self.version"
-            },
-            "suggest": {
-                "drupal/block": "Required by drupal/dashboard, drupal/minimal, drupal/standard",
-                "drupal/color": "Required by drupal/standard",
-                "drupal/comment": "Required by drupal/forum, drupal/tracker, drupal/standard",
-                "drupal/contextual": "Required by drupal/standard",
-                "drupal/dashboard": "Required by drupal/standard",
-                "drupal/dblog": "Required by drupal/minimal, drupal/standard",
-                "drupal/field": "Required by drupal/field_sql_storage, drupal/list, drupal/number, drupal/options, drupal/text, drupal/field_ui, drupal/file",
-                "drupal/field_sql_storage": "Required by drupal/field",
-                "drupal/field_ui": "Required by drupal/standard",
-                "drupal/file": "Required by drupal/image, drupal/standard",
-                "drupal/help": "Required by drupal/standard",
-                "drupal/image": "Required by drupal/standard",
-                "drupal/list": "Required by drupal/standard",
-                "drupal/locale": "Required by drupal/translation",
-                "drupal/menu": "Required by drupal/standard",
-                "drupal/number": "Required by drupal/standard",
-                "drupal/options": "Required by drupal/list, drupal/taxonomy, drupal/standard",
-                "drupal/overlay": "Required by drupal/standard",
-                "drupal/path": "Required by drupal/standard",
-                "drupal/rdf": "Required by drupal/standard",
-                "drupal/search": "Required by drupal/standard",
-                "drupal/shortcut": "Required by drupal/standard",
-                "drupal/taxonomy": "Required by drupal/forum, drupal/standard",
-                "drupal/text": "Required by drupal/comment",
-                "drupal/toolbar": "Required by drupal/standard"
-            },
-            "type": "drupal-core",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-": "7.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Handles general site configuration for administrators.",
-            "homepage": "https://www.drupal.org/project/drupal"
-        },
-        {
-            "name": "drupal/entity",
-            "version": "7.1.6",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/entity",
-                "reference": "724e7193419da3b7d3ca165025256371dd74eb4f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/entity-7.x-1.6.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/entity_token": "self.version"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Enables modules to work with any entity type and to provide entities."
-        },
-        {
-            "name": "drupal/entity_dependency",
-            "version": "7.1.0-alpha2",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/entity_dependency",
-                "reference": "ac41e43a02cb9f6152f8f38b721c4423fa62b1f3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/entity_dependency-7.x-1.0-alpha2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Provides an API to define dependencies between entities, and also a useful iterator class."
         },
         {
             "name": "drupal/key_value",
@@ -1420,68 +1217,29 @@
             "time": "2015-12-17 08:26:29"
         },
         {
-            "name": "drupal/uuid",
-            "version": "7.1.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/uuid",
-                "reference": "0707ea6350131480cc45d35eb864b21df2a99e50"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/uuid-7.x-1.0-beta1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*",
-                "drupal/node": "7.*",
-                "drupal/user": "7.*"
-            },
-            "replace": {
-                "drupal/uuid_path": "self.version",
-                "drupal/uuid_services": "self.version",
-                "drupal/uuid_services_example": "self.version"
-            },
-            "suggest": {
-                "drupal/entity": "Required by drupal/uuid_services",
-                "drupal/rest_server": "Required by drupal/uuid_services_example",
-                "drupal/services": "Required by drupal/uuid_services, drupal/uuid_services_example",
-                "drupal/uuid_services": "Required by drupal/uuid_services_example"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Extends the entity functionality and adds support for universally unique identifiers.",
-            "homepage": "https://www.drupal.org/project/uuid"
-        },
-        {
             "name": "drush/drush",
-            "version": "8.0.1",
+            "version": "8.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "e03a3ef04f559f7ec00df637b4035e09c9cf389e"
+                "reference": "5c90a1d3d201bde1d733afa5d2a1885056a3932f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/e03a3ef04f559f7ec00df637b4035e09c9cf389e",
-                "reference": "e03a3ef04f559f7ec00df637b4035e09c9cf389e",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/5c90a1d3d201bde1d733afa5d2a1885056a3932f",
+                "reference": "5c90a1d3d201bde1d733afa5d2a1885056a3932f",
                 "shasum": ""
             },
             "require": {
                 "pear/console_table": "~1.2.0",
                 "php": ">=5.4.5",
+                "psr/log": "~1.0",
                 "psy/psysh": "~0.6",
                 "symfony/var-dumper": "^2.6.3",
                 "symfony/yaml": "2.7.*"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=3.5",
+                "phpunit/phpunit": "4.*",
                 "symfony/process": "2.7.*"
             },
             "suggest": {
@@ -1554,7 +1312,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2015-11-29 00:43:35"
+            "time": "2016-01-08 18:28:35"
         },
         {
             "name": "easyrdf/easyrdf",

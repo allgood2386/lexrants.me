@@ -1,0 +1,35 @@
+uuid: 76f38963-ae72-4ac7-8800-fadf971fc2c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - multiversion
+    - user
+id: user__from_tmp
+migration_tags: null
+label: ''
+source:
+  plugin: tempstore
+process:
+  uid: uid
+  uuid: uuid
+  langcode: langcode
+  preferred_langcode: preferred_langcode
+  preferred_admin_langcode: preferred_admin_langcode
+  name: name
+  pass: pass
+  mail: mail
+  timezone: timezone
+  status: status
+  created: created
+  changed: changed
+  access: access
+  login: login
+  init: init
+  roles: roles
+  default_langcode: default_langcode
+  revision_id: revision_id
+destination:
+  plugin: multiversion
+template: null
+migration_dependencies: {  }

@@ -1,0 +1,12 @@
+uuid: acd35157-8053-4c4f-bb04-4a678aa1c05f
+langcode: en
+status: true
+dependencies: {  }
+id: replicator
+label: Replicator
+weight: 0
+is_admin: false
+permissions:
+  - 'perform push replication'
+  - 'administer users'
+  - 'perform pull replication'
