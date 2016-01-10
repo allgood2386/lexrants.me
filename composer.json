@@ -18,11 +18,12 @@
         "composer/installers": "1.0.*",
         "drupal/core": "8.0.*",
         "drush/drush": "8.*",
-        "drupal/console": "dev-master",
+        "drupal/console": "^0.10.2",
         "drupal/devel": "8.1.*@dev",
         "drupal/composer_manager": "8.1.*@dev",
-        "allgood2386/lexrants": "1.0.4",
-        "taoti/highlightjs": "8.0.x-dev"
+        "taoti/highlightjs": "8.0.x-dev",
+        "drupal/deploy": "8.1.0-alpha4",
+        "allgood2386/lexrants": "1.0.4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
