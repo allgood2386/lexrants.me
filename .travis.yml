@@ -1,6 +1,11 @@
 language: php
 php:
   - 7.0
+
+mysql:
+  database: drupal
+  username: root
+  encoding: utf8
   
 sudo: false
 
@@ -16,30 +21,14 @@ install:
   - composer --verbose install
   # Create MySQL Database
   - mysql -e 'create database drupal;'
-  - mysql -e 'create database drupal-dev;'
-
   # Remove our included settings.php
   - rm -rf $TRAVIS_BUILD_DIR/web/sites/default/settings.php
-
-
 
 script:
   # Test stable release
   - cd $TRAVIS_BUILD_DIR/web
   # Install drupal default profile
   - drush --verbose site-install --db-url=mysql://root:@127.0.0.1/drupal --yes
-  # Skip core/tests/Drupal/Tests/ComposerIntegrationTest.php because web/ has no composer.json
-  - ./../vendor/bin/phpunit -c core --exclude-group Composer
-  - ./../vendor/bin/drush
-  - ./../vendor/bin/drupal
-
-  # Test dev release
-  - cd $TRAVIS_BUILD_DIR
-  - composer --verbose require --no-update drupal/core:8.0.x-dev
-  - composer --verbose update
-  - cd $TRAVIS_BUILD_DIR/web
-  # Install drupal default profile
-  - drush --verbose site-install --db-url=mysql://root:@127.0.0.1/drupal-dev --yes
   # Skip core/tests/Drupal/Tests/ComposerIntegrationTest.php because web/ has no composer.json
   - ./../vendor/bin/phpunit -c core --exclude-group Composer
   - ./../vendor/bin/drush
