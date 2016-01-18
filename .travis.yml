@@ -18,7 +18,6 @@ install:
   - composer --verbose install
   # Create MySQL Database
   - mysql -e 'create database drupal;'
-  - export SIMPLETEST_DB=mysql://root:@127.0.0.1/drupal
   # Remove our included settings.php
   - rm -rf $TRAVIS_BUILD_DIR/web/sites/default/settings.php
 
@@ -27,9 +26,6 @@ script:
   - which php
   # Test stable release
   - cd $TRAVIS_BUILD_DIR/web
-  # Install drupal default profile
-  - ./../vendor/bin/drush --verbose site-install -y testing --db-url=mysql://root:@127.0.0.1/drupal
-  - ./../vendor/bin/drush en -y simpletest
-  - php core/scripts/run-tests.sh --php ~/.phpenv/shims/php --dburl mysql://root:@127.0.0.1/drupal
+  - ./../vendor/bin/phpunit -c core --exclude-group Composer
   - ./../vendor/bin/drush status
   - ./../vendor/bin/drupal
