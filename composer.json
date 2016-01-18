@@ -24,7 +24,8 @@
         "taoti/highlightjs": "8.0.x-dev",
         "drupal/deploy": "8.1.0-alpha4",
         "allgood2386/lexrants": "1.0.4",
-        "phpunit/phpunit": "^5.1"
+        "phpunit/phpunit": "^5.1",
+        "mikey179/vfsStream": "^1.6"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
