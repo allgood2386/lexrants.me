@@ -18,8 +18,10 @@ install:
   - composer --verbose install
   # Create MySQL Database
   - mysql -e 'create database drupal;'
+  - export SIMPLETEST_DB=mysql://root:@127.0.0.1/drupal
   # Remove our included settings.php
   - rm -rf $TRAVIS_BUILD_DIR/web/sites/default/settings.php
+
 
 script:
   # Test stable release
