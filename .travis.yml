@@ -19,7 +19,6 @@ install:
   # Create MySQL Database
   - mysql -e 'create database drupal;'
   - export SIMPLETEST_DB=mysql://root:@127.0.0.1/drupal
-  - export PHP_PATH=
   # Remove our included settings.php
   - rm -rf $TRAVIS_BUILD_DIR/web/sites/default/settings.php
 
@@ -30,6 +29,6 @@ script:
   - cd $TRAVIS_BUILD_DIR/web
   # Install drupal default profile
   - ./../vendor/bin/drush --verbose site-install -y testing --db-url=mysql://root:@127.0.0.1/drupal
-  - php core/scripts/run-tests.sh PHPUnit --php ~/.phpenv/shims/php --db-url=mysql://root:@127.0.0.1/drupal
+  - php core/scripts/run-tests.sh PHPUnit --php ~/.phpenv/shims/php --dburl mysql://root:@127.0.0.1/drupal
   - ./../vendor/bin/drush status
   - ./../vendor/bin/drupal
