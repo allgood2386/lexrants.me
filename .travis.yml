@@ -1,7 +1,7 @@
 language: php
 php:
   - 7.0
-
+  
 sudo: false
 
 env:
@@ -34,3 +34,4 @@ script:
   - ./../vendor/bin/phpunit -c core --exclude-group Composer
   - ./../vendor/bin/drush
   - ./../vendor/bin/console
+
