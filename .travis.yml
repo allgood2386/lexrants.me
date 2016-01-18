@@ -27,7 +27,7 @@ script:
   # Test stable release
   - cd $TRAVIS_BUILD_DIR/web
   # Install drupal default profile
-  - ./../vendor/bin/drush --verbose site-install testing --db-url=mysql://root:@127.0.0.1/drupal
+  - ./../vendor/bin/drush --verbose site-install -y testing --db-url=mysql://root:@127.0.0.1/drupal
   - php core/scripts/run-tests.sh PHPUnit db-url=mysql://root:@127.0.0.1/drupal --yes
   - ./../vendor/bin/drush status
   - ./../vendor/bin/drupal
