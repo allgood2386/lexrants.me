@@ -19,11 +19,13 @@ install:
   # Create MySQL Database
   - mysql -e 'create database drupal;'
   - export SIMPLETEST_DB=mysql://root:@127.0.0.1/drupal
+  - export PHP_PATH=
   # Remove our included settings.php
   - rm -rf $TRAVIS_BUILD_DIR/web/sites/default/settings.php
 
 
 script:
+  - which php
   # Test stable release
   - cd $TRAVIS_BUILD_DIR/web
   # Install drupal default profile
