@@ -9,9 +9,6 @@ mysql:
   
 sudo: false
 
-env:
-  - SIMPLETEST_DB=sqlite://tmp/site.sqlite
-
 before_install:
   - phpenv config-rm xdebug.ini
   - composer --verbose self-update
@@ -28,7 +25,7 @@ script:
   # Test stable release
   - cd $TRAVIS_BUILD_DIR/web
   # Install drupal default profile
-  - drush --verbose site-install --db-url=mysql://root:@127.0.0.1/drupal --yes
+  - ./../vendor/bin/drush --verbose site-install --db-url=mysql://root:@127.0.0.1/drupal --yes
   # Skip core/tests/Drupal/Tests/ComposerIntegrationTest.php because web/ has no composer.json
   - ./../vendor/bin/phpunit -c core --exclude-group Composer
   - ./../vendor/bin/drush
