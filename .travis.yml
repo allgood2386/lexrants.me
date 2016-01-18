@@ -1,13 +1,11 @@
 language: php
 php:
   - 7.0
-
-mysql:
-  database: drupal
-  username: root
-  encoding: utf8
   
 sudo: false
+
+env:
+  - SIMPLETEST_DB=sqlite://tmp/site.sqlite
 
 before_install:
   - phpenv config-rm xdebug.ini
@@ -16,16 +14,14 @@ before_install:
 
 install:
   - composer --verbose install
-  # Create MySQL Database
-  - mysql -e 'create database drupal;'
   # Remove our included settings.php
   - rm -rf $TRAVIS_BUILD_DIR/web/sites/default/settings.php
 
 
 script:
-  - which php
   # Test stable release
   - cd $TRAVIS_BUILD_DIR/web
+  - ./../vendor/bin/drush si --db-url=sqlite://tmp/site.sqlite
   - ./../vendor/bin/phpunit -c core --exclude-group Composer
   - ./../vendor/bin/drush status
   - ./../vendor/bin/drupal
