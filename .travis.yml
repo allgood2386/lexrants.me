@@ -21,7 +21,7 @@ install:
 script:
   # Test stable release
   - cd $TRAVIS_BUILD_DIR/web
-  - ./../vendor/bin/drush si --db-url=sqlite://tmp/site.sqlite
+  - ./../vendor/bin/drush si -y --db-url=sqlite://tmp/site.sqlite
   - ./../vendor/bin/phpunit -c core --exclude-group Composer
   - ./../vendor/bin/drush status
   - ./../vendor/bin/drupal
